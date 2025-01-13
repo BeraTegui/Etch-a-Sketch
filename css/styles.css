@@ -1,7 +1,10 @@
 .container{
-    width: 800px;
-    height: 800px;
+    width: 894px;
+    height: 100%;
     border: solid #000 5px;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
+    gap: 1em;
+    
 }
