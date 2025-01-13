@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+const container = document.querySelector('.container');
 
 function gridCreation(layout){
     for(let i = 0; i <= layout; i++){
@@ -8,6 +8,6 @@ function gridCreation(layout){
         square.style.height = '10px';
         square.style.border = 'solid, white';
 
-        body.appendChild(square);
+        container.appendChild(square);
     }
 }
