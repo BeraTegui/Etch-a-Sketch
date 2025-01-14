@@ -1,10 +1,10 @@
 .container{
-    width: 894px;
-    height: 100%;
+    width: min-content;
+    height: min-content;
     border: solid #000 5px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    gap: 1em;
+    gap: 0
     
 }

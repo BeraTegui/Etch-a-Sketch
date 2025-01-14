@@ -18,3 +18,5 @@ function gridCreation(layout){
         container.appendChild(auxRow);
     }
 }
+
+gridCreation(16);
