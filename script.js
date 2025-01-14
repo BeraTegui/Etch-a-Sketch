@@ -52,5 +52,10 @@ function changeDimension(dimensions){
 
 btn.addEventListener('click', ()=>{
     let dimensions = prompt("Could you provide the layout's dimensions?");
-    changeDimension(dimensions);
-})
+    if(dimensions <= 100){
+        changeDimension(dimensions);
+    } else{
+        alert('Only dimensions below 100 are accepted');
+    };
+    
+});
