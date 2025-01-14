@@ -1,4 +1,5 @@
 .container{
+    background-color: rgb(255, 249, 196);
     width: min-content;
     height: min-content;
     border: solid #000 5px;
@@ -7,4 +8,21 @@
     margin: auto;
     gap: 0
     
+}
+
+.userInp{
+    border: none;
+    background-color: rgb(2, 119, 189);
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: .7em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
+    display: flex;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }

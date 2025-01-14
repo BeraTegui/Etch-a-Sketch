@@ -38,3 +38,9 @@ block.forEach((currentValue) =>{
         changeColor(currentValue);
     });
 });
+
+const btn = document.querySelector('.userInp');
+
+btn.addEventListener('click', ()=>{
+    
+})
