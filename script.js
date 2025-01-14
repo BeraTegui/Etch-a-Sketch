@@ -41,6 +41,16 @@ block.forEach((currentValue) =>{
 
 const btn = document.querySelector('.userInp');
 
+function changeDimension(dimensions){
+    let lenContainer = container.childElementCount;
+    for(let i = 0; i <= lenContainer; i++){
+        container.removeChild(container.firstChild);
+    }
+    gridCreation(dimensions);
+
+}
+
 btn.addEventListener('click', ()=>{
-    
+    let dimensions = prompt("Could you provide the layout's dimensions?");
+    changeDimension(dimensions);
 })
