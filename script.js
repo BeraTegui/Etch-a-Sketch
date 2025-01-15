@@ -34,9 +34,8 @@ gridCreation(16);
 
 const block = document.querySelectorAll('.block');
 
-
 function changeColor(element){
-    element.style.backgroundColor = 'rgb(197, 202, 233)';
+    element.style.backgroundColor = `rgb(${Math.random()*100}, ${Math.random()*100}, ${Math.random()*100})`;
 }
 
 
