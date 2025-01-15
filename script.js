@@ -4,6 +4,7 @@ function gridCreation(layout){
     for(let i = 1; i <= layout; i++){
         const auxRow = document.createElement('div');
         auxRow.style.display = 'flex';
+        auxRow.classList = "auxRow";
         for(let j = 1; j <= layout; j++){
             let block = document.createElement('div')
             block.classList = "block";
@@ -43,10 +44,10 @@ function changeColor(element){
 const btn = document.querySelector('.userInp');
 
 function changeDimension(dimensions){
-    let lenContainer = container.childElementCount;
-    for(let i = 0; i <= lenContainer; i++){
-        container.removeChild(container.firstChild);
-    }
+    document.querySelectorAll('.auxRow').forEach((currentValue) =>{
+        currentValue.remove();
+        
+    });
     gridCreation(dimensions);
     
 
