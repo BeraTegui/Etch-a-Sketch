@@ -16,6 +16,7 @@ function gridCreation(layout){
             block.style.padding = '0px';
             block.style.flex = 1;
             block.style.height = "100%";
+            block.style.opacity = "0.1";
             
             auxRow.appendChild(block);
             
@@ -25,6 +26,7 @@ function gridCreation(layout){
     document.querySelectorAll('.block').forEach((currentValue) =>{
         currentValue.addEventListener('mouseover', () =>{
             changeColor(currentValue);
+            currentValue.style.opacity = Number(currentValue.style.opacity) + 0.1;
         });
     });
     
