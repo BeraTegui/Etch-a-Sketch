@@ -19,6 +19,11 @@ function gridCreation(layout){
         }
         container.appendChild(auxRow);
     }
+    document.querySelectorAll('.block').forEach((currentValue) =>{
+        currentValue.addEventListener('mouseover', () =>{
+            changeColor(currentValue);
+        });
+    });
     
 }
 
@@ -27,17 +32,13 @@ function gridCreation(layout){
 gridCreation(16);
 
 const block = document.querySelectorAll('.block');
-console.log(block);
+
 
 function changeColor(element){
     element.style.backgroundColor = 'rgb(197, 202, 233)';
 }
 
-block.forEach((currentValue) =>{
-    currentValue.addEventListener('mouseover', () =>{
-        changeColor(currentValue);
-    });
-});
+
 
 const btn = document.querySelector('.userInp');
 
@@ -47,6 +48,7 @@ function changeDimension(dimensions){
         container.removeChild(container.firstChild);
     }
     gridCreation(dimensions);
+    
 
 }
 
@@ -57,5 +59,6 @@ btn.addEventListener('click', ()=>{
     } else{
         alert('Only dimensions below 100 are accepted');
     };
+    
     
 });
