@@ -5,15 +5,17 @@ function gridCreation(layout){
         const auxRow = document.createElement('div');
         auxRow.style.display = 'flex';
         auxRow.classList = "auxRow";
+        auxRow.style.flex = 1;
         for(let j = 1; j <= layout; j++){
             let block = document.createElement('div')
             block.classList = "block";
             block.style.backgroundColor = 'white';
-            block.style.border = 'solid 5px black'
-            block.style.width = '45px';
-            block.style.height = '45px';
+            block.style.border = 'solid 1px black'
+            block.style.width = 'auto';
+            block.style.height = 'auto';
             block.style.padding = '0px';
-            block.style.flexShrink = 1;
+            block.style.flex = 1;
+            block.style.height = "100%";
             
             auxRow.appendChild(block);
             
@@ -30,7 +32,7 @@ function gridCreation(layout){
 
 
 
-gridCreation(16);
+gridCreation(5);
 
 const block = document.querySelectorAll('.block');
 

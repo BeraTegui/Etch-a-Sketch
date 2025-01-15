@@ -1,12 +1,13 @@
 .container{
     background-color: rgb(255, 249, 196);
-    width: min-content;
-    height: min-content;
+    width: 500px;
+    height: 500px;
     border: solid #000 5px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    gap: 0
+    gap: 0;
+    flex-direction: column;
     
 }
 
